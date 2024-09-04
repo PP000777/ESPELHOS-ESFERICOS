@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Espelhos Esféricos</h1>
+
+    <div class="botoens" id="botoens">
+        <div class="input-group">
+            <p>Coloque a Distância do objeto ao espelho</p>
+            <input type="number" name="P" id="P">
+            <select id="unidadeP" name="unidadeP">
+                <option value="cm">Centímetros (cm)</option>
+                <option value="m">Metros (m)</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <p>Coloque o foco</p>
+            <input type="number" name="F" id="F">
+            <select id="unidadeF" name="unidadeF">
+                <option value="cm">Centímetros (cm)</option>
+                <option value="m">Metros (m)</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <p>Coloque a altura do objeto</p>
+            <input type="number" name="Y" id="Y">
+            <select id="unidadeY" name="unidadeY">
+                <option value="cm">Centímetros (cm)</option>
+                <option value="m">Metros (m)</option>
+            </select>
+        </div>
+        <button id="botao">Calcular e Mostrar resultados</button>
+        <p id="mensagem"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

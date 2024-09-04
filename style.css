@@ -1,0 +1,162 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+html {
+    background-color: antiquewhite;
+    background-image: linear-gradient(to bottom, #a3d5ff, #b7e0ff, #d1edff, #ebf9ff);
+    background-attachment: fixed;
+    background-size: cover;
+    animation: fadeInBackground 1s ease-in-out;
+}
+
+/* Animação de Fade-In no Background */
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    margin-top: 40px;
+    color: #004085;
+    animation: slideInDown 0.8s ease-out;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+div.botoens {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.input-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-group p {
+    margin: 0;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+input, select {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1em;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+}
+
+select {
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+input:focus, select:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+
+button {
+    background-color: #9bd461;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #87b750;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+
+p#mensagem {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #004085;
+    text-align: center;
+    animation: fadeInMessage 1s ease-in-out;
+}
+
+
+@keyframes fadeInMessage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    div.botoens {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input, select {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
